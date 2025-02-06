@@ -12,7 +12,7 @@ export const env = createEnv({
       .enum(["development", "test", "production"])
       .default("development"),
     NODE_VERSION: z.string().default("23.7.0"),
-    COREPACK_IGNORE_STRICT_SIGNATURES: z.number().default(1),
+    COREPACK_IGNORE_STRICT_SIGNATURES: z.string().default("1"),
   },
 
   /**
