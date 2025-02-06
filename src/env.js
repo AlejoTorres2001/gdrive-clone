@@ -13,6 +13,11 @@ export const env = createEnv({
       .default("development"),
     NODE_VERSION: z.string().default("23.7.0"),
     COREPACK_IGNORE_STRICT_SIGNATURES: z.string().default("1"),
+    SINGLESTORE_USER: z.string(),
+    SINGLESTORE_PASSWORD: z.string(),
+    SINGLESTORE_HOST: z.string(),
+    SINGLESTORE_PORT: z.string(),
+    SINGLESTORE_DB: z.string(),
   },
 
   /**
@@ -33,6 +38,11 @@ export const env = createEnv({
     NODE_ENV: process.env.NODE_ENV,
     NODE_VERSION: process.env.NODE_VERSION,
     COREPACK_IGNORE_STRICT_SIGNATURES: process.env.COREPACK_IGNORE_STRICT_SIGNATURES,
+    SINGLESTORE_USER: process.env.SINGLESTORE_USER,
+    SINGLESTORE_PASSWORD: process.env.SINGLESTORE_PASSWORD,
+    SINGLESTORE_HOST: process.env.SINGLESTORE_HOST,
+    SINGLESTORE_PORT: process.env.SINGLESTORE_PORT,
+    SINGLESTORE_DB: process.env.SINGLESTORE_DB,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**
